@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<h2>"Hello, World!"</h2>
+<body onload="typing()" \>
+
+<p id="index"></p>
+
+<script>
+var i = 0;
+var txt = 'This is a “Hello, World” program generally outputs or displays “Hello, World” created by me (a noob programmer), for Krenovator.';
+var speed = 73;
+
+function typing() {
+  if (i < txt.length) {
+    document.getElementById("index").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typing, speed);
+  }
+}
+</script>
+
+
+</html>
